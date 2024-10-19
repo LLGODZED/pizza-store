@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Details</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 id="page-title" class="text-center">Pizza Details</h1>
+        <div class="product-detail-container row">
+            <div class="col-md-6 product-image-container">
+                <img id="product-image" class="img-fluid" src="" alt="Pizza Image">
+            </div>
+            <div class="col-md-6 product-info-container">
+                <h2 id="product-name" class="product-title"></h2>
+                <p><strong>Price: </strong><span id="product-price"></span> USD</p>
+                <p><strong>Size: </strong><span id="product-size"></span></p>
+                <p><strong>Calories: </strong><span id="product-calories"></span> kcal</p>
+                <p><strong>Crust Type: </strong><span id="product-crust"></span></p>
+                <p><strong>Quality: </strong><span id="product-quality"></span></p>
+                <a id="back-button" class="btn btn-secondary mt-4" href="/">Back to Menu</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const pizzaId = urlParams.get('id');
+
+            fetch(`/api/pizzas/${pizzaId}`)
+                .then(response => response.json())
+                .then(pizza => {
+                    document.getElementById('product-name').textContent = pizza.name;
+                    document.getElementById('product-price').textContent = pizza.price;
+                    document.getElementById('product-size').textContent = pizza.size;
+                    document.getElementById('product-calories').textContent = pizza.calories;
+                    document.getElementById('product-crust').textContent = pizza.crust;
+                    document.getElementById('product-quality').textContent = pizza.quality;
+                    document.getElementById('product-image').src = pizza.image;
+                })
+                .catch(err => console.error('Error loading pizza details:', err));
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

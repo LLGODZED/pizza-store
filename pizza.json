@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "Margherita Pizza",
+    "ingredients": ["Tomato Sauce", "Mozzarella Cheese", "Basil"],
+    "description": "A classic Italian pizza topped with fresh mozzarella cheese, tangy tomato sauce, and aromatic basil leaves.",
+    "price": 10.99,
+    "size": "Medium",
+    "calories": 270,
+    "crust": "Thin Crust",
+    "quality": "High Quality Ingredients",
+    "rating": 4.5,
+    "image": "images/P1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Pepperoni Pizza",
+    "ingredients": ["Tomato Sauce", "Mozzarella Cheese", "Pepperoni"],
+    "description": "A mouthwatering pizza topped with mozzarella cheese and plenty of spicy pepperoni slices.",
+    "price": 12.99,
+    "size": "Large",
+    "calories": 300,
+    "crust": "Stuffed Crust",
+    "quality": "Premium Pepperoni",
+    "rating": 4.7,
+    "image": "images/P2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "BBQ Chicken Pizza",
+    "ingredients": ["BBQ Sauce", "Mozzarella Cheese", "Grilled Chicken", "Red Onions", "Cilantro"],
+    "description": "A tangy and smoky pizza topped with BBQ sauce, grilled chicken, and red onions, finished with a sprinkle of fresh cilantro.",
+    "price": 14.49,
+    "size": "Large",
+    "calories": 320,
+    "crust": "Hand-Tossed",
+    "quality": "Grilled Chicken Breast",
+    "rating": 4.6,
+    "image": "images/P3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Vegetarian Pizza",
+    "ingredients": ["Tomato Sauce", "Mozzarella Cheese", "Bell Peppers", "Olives", "Red Onions", "Mushrooms"],
+    "description": "A healthy vegetarian pizza loaded with bell peppers, olives, onions, and mushrooms on a delicious tomato sauce base.",
+    "price": 11.99,
+    "size": "Medium",
+    "calories": 250,
+    "crust": "Thin Crust",
+    "quality": "Farm Fresh Vegetables",
+    "rating": 4.3,
+    "image": "images/P4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Hawaiian Pizza",
+    "ingredients": ["Tomato Sauce", "Mozzarella Cheese", "Ham", "Pineapple"],
+    "description": "A sweet and savory pizza topped with juicy pineapple and savory ham.",
+    "price": 13.49,
+    "size": "Large",
+    "calories": 290,
+    "crust": "Classic Crust",
+    "quality": "Smoked Ham",
+    "rating": 4.4,
+    "image": "images/P5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Four Cheese Pizza",
+    "ingredients": ["Tomato Sauce", "Mozzarella Cheese", "Parmesan Cheese", "Gorgonzola", "Ricotta"],
+    "description": "A rich and creamy pizza with a blend of four cheeses: mozzarella, parmesan, gorgonzola, and ricotta.",
+    "price": 13.99,
+    "size": "Medium",
+    "calories": 310,
+    "crust": "Hand-Tossed",
+    "quality": "Gourmet Cheese Selection",
+    "rating": 4.8,
+    "image": "images/P6.jpg"
+  }
+]
