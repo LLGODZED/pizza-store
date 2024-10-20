@@ -4,7 +4,7 @@
     "name": "Margherita Pizza",
     "ingredients": ["Tomato Sauce", "Mozzarella Cheese", "Basil"],
     "description": "A classic Italian pizza topped with fresh mozzarella cheese, tangy tomato sauce, and aromatic basil leaves.",
-    "price": 10.99,
+    "price": 11.00,
     "size": "Medium",
     "calories": 270,
     "crust": "Thin Crust",
